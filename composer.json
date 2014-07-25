@@ -21,9 +21,4 @@
 			"Parallel": "src/"
 		}
 	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "master"
-		}
-	}
 }
