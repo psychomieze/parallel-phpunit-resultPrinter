@@ -6,11 +6,11 @@ This is a very ugly but working hack to get nicer results when running tests wit
 
 Works like this:
 
-<code>
+<pre>
 time find -L . -name \*Test.php -path \*typo3_src/typo3/sysext/*/Tests/Functional* | parallel --gnu 'echo; echo "Running functional {} test case";  ./bin/phpunit --colors -c typo3/sysext/core/Build/FunctionalTests.xml --printer "\Parallel\PhpUnit\ResultPrinter" {}' > /dev/null
 cat test.txt
 rm test.txt
-</code>
+</pre>
 
 Add the following to your composer.json:
 
